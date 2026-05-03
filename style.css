@@ -158,3 +158,8 @@ footer {
     padding: 60px 20px;
   }
 }
+
+.logo {
+  height: 40px;
+  filter: drop-shadow(0 0 5px rgba(139, 92, 246, 0.4));
+}
