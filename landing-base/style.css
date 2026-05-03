@@ -1,0 +1,160 @@
+:root {
+  --primary: #6366f1;
+  --secondary: #8b5cf6;
+  --bg: #0f172a;
+  --text: #ffffff;
+  --text-soft: #cbd5f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#hero {
+  min-height: 80vh;
+  padding: 100px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  color: var(--text-soft);
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+}
+
+#features {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#features h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 12px;
+  width: 250px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card p {
+  color: var(--text-soft);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+#cta {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+#cta p {
+  margin-bottom: 30px;
+  color: #e0e7ff;
+}
+
+#cta button {
+  background: white;
+  color: var(--primary);
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #020617;
+  color: #94a3b8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  header {
+    padding: 15px 20px;
+  }
+
+  #hero {
+    min-height: auto;
+    padding: 80px 20px 40px;
+  }
+
+  #hero h1 {
+    font-size: 1.8rem;
+  }
+
+  #hero p {
+    font-size: 1rem;
+  }
+
+  button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  #cta {
+    padding: 60px 20px;
+  }
+}
