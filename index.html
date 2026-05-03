@@ -1,52 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <link rel="icon" type="image/png" href="./favicon-32x32.png">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Landing Servicios Web</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
 
-  <header>
+  <header class="header option-2">
     <div class="brand">
-      <img src="./logo.png" alt="W Studio logo">
-      <span>W Studio</span>
+      <img src="./logo.png" alt="W Studio logo" />
+      <span>W STUDIO</span>
     </div>
+
+    <nav class="nav" aria-label="Principal">
+      <a href="#inicio" class="active">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#sobre-mi">Sobre mi</a>
+    </nav>
+
+    <!-- botón hamburger visible en móvil -->
+    <button class="mobile-toggle" aria-expanded="false" aria-label="Abrir menú">☰</button>
+
+    <a href="https://wa.me/573228521894?text=Hola,%20quiero%20una%20landing%20para%20mi%20negocio!" class="cta-header" target="_blank" rel="noopener noreferrer" aria-label="Hablemos por WhatsApp">
+      <!-- SVG WhatsApp (inline) -->
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20.52 3.478a11.95 11.95 0 00-16.914 0 11.95 11.95 0 000 16.914L2 22l1.609-1.406A11.95 11.95 0 0020.52 3.478z" fill="rgba(255,255,255,0.06)"/>
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.671.149-.198.297-.767.966-.94 1.164-.173.198-.346.223-.643.074-.297-.149-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.652-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.346.446-.52.15-.173.198-.297.297-.495.099-.198 0-.371-.05-.52-.049-.148-.671-1.612-.92-2.208-.242-.579-.487-.5-.671-.51l-.571-.01c-.198 0-.52.074-.79.37-.273.297-1.04 1.016-1.04 2.479 0 1.462 1.064 2.877 1.212 3.078.149.198 2.095 3.2 5.077 4.487 0.71.306 1.263.489 1.693.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.412.248-.694.248-1.289.173-1.412-.074-.124-.271-.198-.568-.347z" fill="#fff"/>
+      </svg>
+      <span>Hablemos</span>
+    </a>
   </header>
 
   <main>
-
     <!-- HERO -->
     <section id="hero">
       <h1>Landing pages que convierten</h1>
       <p>En W Studio creamos páginas que generan clientes para tu negocio</p>
 
-      <a href="https://wa.me/573228521894?text=Hola,%20quiero%20una%20landing%20para%20mi%20negocio!" target="_blank" rel="noopener noreferrer">
-        <button>Quiero mi landing 🚀</button>
-      </a>
+      <div class="hero-ctas">
+        <a href="https://wa.me/573228521894?text=Hola,%20quiero%20mi%20landing" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Quiero mi landing</a>
+        <a href="#features" class="btn btn-outline">Ver ejemplos</a>
+      </div>
     </section>
-
 
     <!-- FEATURES -->
     <section id="features">
       <h2>¿Por qué elegirme?</h2>
+      <h2 class="subtitle">Páginas que trabajan por tu negocio!</h2>
 
       <div class="cards">
         <div class="card">
-          <h3>Más clientes 💰</h3>
-          <p>Landing pages diseñadas para convertir visitas en ventas reales.</p>
+          <div class="icon" aria-hidden="true">
+            <!-- WhatsApp -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.671.149-.198.297-.767.966-.94 1.164-.173.198-.346.223-.643.074-.297-.149-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.652-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.346.446-.52.15-.173.198-.297.297-.495.099-.198 0-.371-.05-.52-.049-.148-.671-1.612-.92-2.208-.242-.579-.487-.5-.671-.51l-.571-.01c-.198 0-.52.074-.79.37-.273.297-1.04 1.016-1.04 2.479 0 1.462 1.064 2.877 1.212 3.078.149.198 2.095 3.2 5.077 4.487 0.71.306 1.263.489 1.693.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.412.248-.694.248-1.289.173-1.412-.074-.124-.271-.198-.568-.347z"/>
+            </svg>
+          </div>
+
+          <div class="content">
+            <h3>Más clientes 💰</h3>
+            <p>Diseño enfocado en conversión para que tu página genere ventas 24/7.</p>
+            <div class="meta">Optimizada para performance y SEO</div>
+          </div>
         </div>
 
         <div class="card">
-          <h3>Entrega rápida ⚡</h3>
-          <p>Tu página lista en pocos días, sin procesos complicados.</p>
+          <div class="icon" aria-hidden="true">
+            <!-- Lightning / entrega rápida -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M13 2L3 14h7l-1 8L21 10h-7l-1-8z"/>
+            </svg>
+          </div>
+
+          <div class="content">
+            <h3>Entrega rápida ⚡</h3>
+            <p>Tu landing lista en pocos días, sin procesos complicados ni largas esperas.</p>
+            <div class="meta">Proceso ágil y comunicación constante</div>
+          </div>
         </div>
 
         <div class="card">
-          <h3>Diseño profesional 🎨</h3>
-          <p>Diseños modernos y adaptados a cualquier dispositivo.</p>
+          <div class="icon" aria-hidden="true">
+            <!-- Monitor / diseño profesional -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M21 3H3v12h18V3zm-2 10H5V5h14v8zM8 21h8v-2H8v2z"/>
+            </svg>
+          </div>
+
+          <div class="content">
+            <h3>Diseño profesional 🎨</h3>
+            <p>Diseños modernos, responsivos y adaptados a tu marca y objetivos.</p>
+            <div class="meta">Identidad visual y experiencia de usuario</div>
+          </div>
         </div>
       </div>
     </section>
@@ -54,18 +102,18 @@
     <!-- CTA -->
     <section id="cta">
       <h2>¿Listo para tener más clientes?</h2>
-      <p>Escríbeme y empecemos hoy mismo 🚀</p>
+      <p>Escríbeme y empecemos hoy mismo</p>
 
       <a href="https://wa.me/573228521894?text=Hola,%20quiero%20más%20información%20sobre%20tus%20servicios!" target="_blank" rel="noopener noreferrer">
         <button>Hablar por WhatsApp</button>
       </a>
     </section>
-
   </main>
 
   <footer>
     <p>© 2026 W Studio. Todos los derechos reservados.</p>
   </footer>
 
+  <script src="./menu.js"></script>
 </body>
 </html>
