@@ -373,8 +373,8 @@ header {
   position: relative;
   z-index: 2;
 
-  width: 100%;
-  max-width: 720px;
+  width: 190%;
+  max-width: 920px;
 
   transform: perspective(1200px)
              rotateY(-8deg)
